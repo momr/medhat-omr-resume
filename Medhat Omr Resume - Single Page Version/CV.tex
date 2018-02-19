@@ -1,0 +1,318 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+% \usepackage[document]{ragged2e}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Medhat Omr}
+\newcommand{\CVTitle}{Medhat Omr's CV for Udacity 2018}
+\newcommand{\CVNote}{CV compiled on {\today} for Udacity 2018}
+\newcommand{\CVWebpage}{https://www.linkedin.com/in/medhatomr}
+\newcommand{\github}{https://github.com/momr}
+
+% PDF settings and properties.
+% \usepackage{hyperref}
+
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+% pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+colorlinks   = true,
+urlcolor = {blue},
+breaklinks
+}
+
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+% \hypersetup{linkcolor=blue,
+% urlcolor  = blue}
+
+\begin{SubTitle}
+{Calgary, AB, Canada}
+\par
+\href{mailto:medhat.omr@gmail.com}
+{medhat.omr@gmail.com}
+\,\SubBulletSymbol\,
++1\,(403)\,918-7512
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{LinkedIn}}
+\,\SubBulletSymbol\,
+\href{\github}
+{\url{GitHub}}
+\end{SubTitle}
+
+\begin{Body}
+
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Machine Learning (Statistical methods, and Deep Learning),
+Data Science and Big Data, 
+Self-Driving Cars related skills such as Localization, Control, Path Planning, Navigation, and Computer Vision.
+
+
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+
+\Entry
+% \href{http://www.queensu.ca/}
+{\textbf{Queen's University}},
+Kingston, ON, Canada. 
+\hfill
+\DatestampYMD{2011}{09}{15} --
+\DatestampYMD{2015}{03}{15}
+
+\Gap
+Ph.D. in 
+% \href{http://my.ece.queensu.ca/}
+{Electrical \& Computer Engineering}
+\hfill
+GPA 4.15
+\BulletItem
+Advisor: Prof. 
+% \href{http://my.ece.queensu.ca/People/AboelmagdNoureldin/index.html}
+{Aboelmagd Noureldin}
+
+
+\BigGap
+\Entry
+% \href{http://www.asu.edu.eg/}
+{\textbf{Ain Shams University}},
+Cairo, Egypt. 
+\hfill
+\DatestampYMD{2003}{09}{15} --
+\DatestampYMD{2008}{06}{15}
+
+\Gap
+B.Sc. in 
+% \href{https://eng.asu.edu.eg/}
+{Computer \& Systems Engineering }
+\hfill
+GPA 3.95/4
+\BulletItem
+Class rank: 3 of 140
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+% \href{http://www.tdk.com/index.php}
+{\textbf{TDK}}, Canada
+
+\Gap
+Staff Algorithm Engineer, Navigation R\&D
+\hfill
+\DatestampYMD{2017}{10}{15} --
+Present
+\BulletItem
+Products:
+T-PN ME, \href{http://www.coursasports.com/}{CoursaSports}, and Driving Navigation related R\&D project
+\BulletItem
+In addition to the products above, I also build and maintain helping tools mainly\newline 
+written in C++14, and Python
+
+\Gap
+Sr. Software Algorithm Designer, Navigation R\&D
+\hfill
+\DatestampYMD{2015}{04}{15} --
+\DatestampYMD{2017}{09}{15}
+\BulletItem
+Products:
+\href{http://www.coursasports.com/}{CoursaSports}
+\BulletItem
+In addition to the product above, I also built one internal library from scratch in C,\newline
+and rewrite another big library from C into C++14 for another application
+
+\BigGap
+Software Algorithm Designer, Navigation R\&D
+\hfill
+\DatestampYMD{2012}{06}{15} --
+\DatestampYMD{2015}{03}{15}
+\BulletItem
+Products: T-PN ME
+
+\BulletItem
+For more details on my rule in T-PN ME product line,\newline
+please see Chapter 3 of my Ph.D. thesis \href{https://qspace.library.queensu.ca/bitstream/handle/1974/12804/Omr_Medhat_201504_PhD.pdf?sequence=1}{[here]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Online Education %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Online \newline
+Education}
+{Online Education}
+{PDF:OnlineEducation}
+
+\Entry
+% \href{https://www.udacity.com/drive}
+{\textbf{Udacity}},
+Self-Driving Car Engineer Online Nanodegree
+\hfill
+\DatestampYMD{2017}{01}{15} --
+\DatestampYMD{2018}{01}{15}
+
+\Gap
+% \href{https://medium.com/self-driving-cars/term-1-in-depth-on-udacitys-self-driving-car-curriculum-ffcf46af0c08}
+{Over 15 projects in one year}
+
+\BulletItem
+Using deep learning to solve Traffic Sign Classification, and Driver Behaviour Cloning problems
+\BulletItem
+Using Computer Vision to implement an Advanced Lane Detection
+\BulletItem
+Using Machine Learning algorithms such as SVM, Decision Trees, and Ensemble Learning to solve Vehicle Tracking problem
+
+% \href{https://medium.com/udacity/term-2-in-depth-on-udacitys-self-driving-car-curriculum-775130aae502}
+\BulletItem
+Implement a complete library in C++ for Extended Kalman Filter, Unscented Kalman Filter, and Particle Filter
+
+% \href{https://medium.com/udacity/term-3-in-depth-on-udacitys-self-driving-car-curriculum-15d03e45d7ea}
+\BulletItem
+Implementing a Highway Path Planner involving Environmental Prediction, Behavior Planning, and Trajectory Generation
+\BulletItem
+Implementing Semantic Segmentation using Fully Convolutional Networks, Scene Understanding, and Inference Optimizations
+
+
+%%%%%%%%%%%%%%%%%%
+%% Computer Skills %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Computer \newline
+Skills}
+{Computer Skills}
+{PDF:Computer Skills}
+
+\Entry
+Languages: C, C++11, Python, and MATLAB
+
+\Entry
+Libraries: Scikit-learn, OpenCV, Keras, Tensorflow, TensorFlow Object Detection API, and PyTorch
+
+\Entry
+Other Tools/Services: Git, GitHub, CMake, and AWS
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+5 Patents (1 issued and 4 provisional applications), 1 Journal Paper, and 5 Conference Papers all listed on my Google Scholar page here: \href{https://goo.gl/3tdX5V}{https://goo.gl/3tdX5V}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Honors}
+{Awards \& Honors}
+{PDF:AwardsAndHonors}
+
+\BulletItem
+Mitacs and NSRC Awards, Electrical and Computer Engineering, Queens University 
+\hfill
+\DatestampY{2012} --
+\DatestampY{2015}
+\begin{Detail}
+\Item
+For successfully doing research in partnership with an industrial partner.
+\end{Detail}
+
+\Gap
+\BulletItem
+200\% working hours Award, Computer and Systems Engineering, Ain Shams University
+\hfill
+\DatestampYMD{2010}{05}{10}
+\begin{Detail}
+\Item
+for outstanding achievement as a Teaching Assistant
+\end{Detail}
+
+\end{Body}
+
+% %%%%%%%%%%%
+% % CV NOTE %
+% %%%%%%%%%%%
+
+% \UseNoteFont%
+% \null\hfill%
+% [\textit{\CVNote}]
+\end{document}
